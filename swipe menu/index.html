@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Swipe menu</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b3d0ff;
+  margin: 0 auto;
+  width: auto;
+}
+</style>
+</head>
+
+
+<body>
+
+<div id="side-bar">
+  <ul>
+    <li>Главная</li>
+    <li>Проекты</li>
+    <li>О нас</li>
+    <li>Контакты</li>
+  </ul>
+</div>
+
+<div class="swipe-pan"></div>
+
+
+
+<div id="elem"></div>
+
+
+<style>
+
+  #side-bar {
+    left: -170px;
+    position: fixed;
+    width: 170px;
+    height: 100vh;
+    background-color: #678cc7;
+    transition: .1s;
+  }
+  #side-bar ul {
+    padding: 0;
+  }
+  #side-bar ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 26px;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: .2s;
+  }
+  #side-bar ul li:hover {
+    color: #e9e8ff;
+  }
+
+  #side-bar.active {
+    left: 0px;
+  }
+
+
+  .swipe-pan {
+    width: 4vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+    display: block;
+  }
+
+
+
+
+	#elem {
+      top: 1vw;
+      left: 86vw;
+      position: fixed;
+      width: 90px;
+      height: 70px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  #elem::before {
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: #fff;
+      transform: translateY(-10px);
+      transition: .3s;
+  }
+  #elem::after {
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: #fff;
+      transform: translateY(10px);
+      transition: .3s;
+  }
+    #elem::after {
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: #fff;
+      transform: translateY(10px);
+      transition: .3s;
+  }
+  
+  #elem.active::before {
+      transform: rotate(-45deg);
+  }
+  #elem.active::after {
+      transform: rotate(45deg);
+  }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+  const x = document.getElementById('elem');
+  const z = document.getElementById('side-bar')
+  x.onclick = function() {
+    x.classList.toggle('active');
+    z.classList.toggle('active');
+  }
+
+
+    var isTouchDevice = 'ontouchstart' in document.documentElement;
+    var x1 = 0;
+    var x2 = 0;
+    var y1 = 0;
+    var y2 = 0;
+    var c = 0;
+    $('.swipe-pan').on('touchstart', function(e){
+      $('body').on('touchmove', function(e){
+        c = e.originalEvent.touches[0].pageX
+        if(c < 170) {
+          $('#side-bar').css('left', c - 170 + "px")
+        }
+      })
+        if (isTouchDevice)  {
+          x1 = e.originalEvent.touches[0].pageX
+          y1 = e.originalEvent.touches[0].pageY
+        }
+    });
+    $('body').on('touchend', function(e){
+        if (isTouchDevice)  {
+          if(c < 140) {
+            $('#side-bar').css('left', -170 + "px")
+          } else {
+            console.log("s")
+            $('#side-bar').css('left', 0 + "px")
+          }
+          x2 = e.originalEvent.changedTouches[0].pageX
+          y2 = e.originalEvent.changedTouches[0].pageY
+          if(x1 + 300 < x2 && y1 - 200 < y2) {
+            x.classList.toggle('active');
+            z.classList.toggle('active');
+          }
+        }
+    }); 
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
