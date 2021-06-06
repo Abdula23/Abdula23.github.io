@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="money">0$</div>
+
+    <div class="map">
+        <div class="country" id="c1">
+            <div class="country_title">Russia</div>
+        </div>
+        <div class="country" id="c2">
+            <div class="country_title">Usa</div>   
+            <div class="country_attack"><img src="https://img.icons8.com/clouds/100/000000/define-location.png"/></div>
+            <div class="country_defense">Defense: 27</div>
+        </div>
+        <div class="country" id="c3">France</div>
+        <div class="country" id="c4">China</div>
+    </div>
+
+
+    
+    
+    
+    
+    <div class="factory_container">
+        <div class="factory">
+            <div class="factory_title">Factory</div>
+            <div class="factory_power">0.5 in 1s</div>
+            <div class="factory_products">0</div>
+        </div>
+        <button class="factory_upgrade_btn">Upgrade 6$</button>
+        <button class="collect_btn">Collect</button>
+    </div>
+    
+    <div class="factory_open_btn" title="Завод"><img src="https://img.icons8.com/clouds/100/000000/factory.png"/></div>
+    <div class="army_open_btn" title="Войска"><img src="https://img.icons8.com/fluent/96/000000/battle.png"/></div>
+    
+    <div class="army_container">
+        <div class="army_counts">0 soliders</div>
+        <button class="army_buy_btn" title="Купить 1 солдата">Buy 1 solider</button>
+        <div class="army_price">20$ for 1 solider</div>
+    </div>
+    
+
+    
+    <div class="confirm_attack_container">
+        <div class="confirm_attack_title">Do you want attack this country?</div>
+        <div class="confirm_attack_desc">Need 27 soliders</div>
+        <div class="confirm_attack_btns">
+            <button class="confirm_attack_no">No</button>
+            <button class="confirm_attack_yes">Yes</button>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
