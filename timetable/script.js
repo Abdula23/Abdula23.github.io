@@ -99,4 +99,5 @@ if($('.innerToday').html() == "") {
 $('.main, .closePopupLine').click(()=>{
 	$('.popupToday').addClass('top')
 	setTimeout(()=> {$('.popupToday').addClass('down')}, 200)
+	$('.blackOpac').css('opacity', '0')
 })
