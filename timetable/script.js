@@ -101,3 +101,5 @@ $('.main, .closePopupLine').click(()=>{
 	setTimeout(()=> {$('.popupToday').addClass('down')}, 200)
 	$('.blackOpac').css('opacity', '0')
 })
+
+//as
