@@ -86,7 +86,7 @@ if($('.innerToday').html() == "") {
 }
 
 
-$('.main').click(()=>{
+$('.main, .closePopupLine').click(()=>{
 	$('.popupToday').addClass('top')
 	setTimeout(()=> {$('.popupToday').addClass('down')}, 200)
 })
