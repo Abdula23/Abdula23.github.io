@@ -1,0 +1,154 @@
+body {
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	background: rgba(196, 196, 196, 0.2);
+}
+
+.dayElemBlock {
+	padding:  10px 10px 0 10px;
+	background-color: #fff;
+}
+.groupName {
+	height: 46px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	text-align: center;
+	color: #000000;
+}
+
+.doubleLessonElems {
+	display: flex;
+	align-items: center;
+}
+
+.numberLessonBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.doubleLessonElems .lessonsElem {
+	height: 76px;
+	margin-top: -10px;
+}
+.doubleLessonElems .numberLessonBlock {
+	margin-top: -10px;
+}
+.lessonsElem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.firstLesson {
+	width: 98%;
+	display: flex;
+	align-items: center;
+	height: 18px;
+	background: #FFFFFF;
+	border: 0.2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 11px 0px 0px 11px;
+}
+.secondLesson {
+	width: 98%;
+	display: flex;
+	align-items: center;
+	height: 18px;
+	background: #FFFFFF;
+	border: 0.2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 11px 0px 0px 11px;
+}
+
+.weekNumber {
+	margin: 0 0 0 8px;
+	width: 24px;
+	height: 18px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 10px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #000000;
+
+	opacity: 0.7;
+}
+.lessonName {
+	width: 100%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 16px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.numberLesson {
+	line-height: .6;
+	font-size: 14px;
+	width: 30px;
+}
+.oneLessonElems .numberLesson {
+}
+.upLine {
+	width: 14px;
+	height: 14px;
+	margin: 0 0 2px 3px;
+	opacity: .8;
+}
+.downLine {
+	width: 14px;
+	height: 14px;
+	margin: 2px 0 0 3px;
+	opacity: .8;
+}
+.upLine img {
+	width: 14px;
+	height: 14px;
+	margin-left: 3px;
+	opacity: .8;
+}
+.downLine img {
+	width: 14px;
+	height: 14px;
+	margin-left: 3px;
+	opacity: .8;
+}
+
+.oneLessonElems {
+	display: flex;
+	align-items: center;
+	margin: 0 0 10px 0;
+}
+.oneLessonElems .numberLesson {
+	margin-right: 6px;
+}
+
+
+
+.popupToday {
+	position: fixed;
+	width: 94vw;
+	height: 30vh;
+	margin: 40vh 0 0 0;
+	background-color: #ffffff;
+	border-radius: 40px 40px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform .3s linear;
+}
+.popupToday.top {
+	transition: transform .2s linear;
+	transform: translateY(-4vh);
+}
+.popupToday.down {
+	transition: transform .3s linear;
+	transform: translateY(30vh);
+}
