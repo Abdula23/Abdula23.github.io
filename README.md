@@ -1,3 +1,3 @@
 # Abdula23.github.io
 
-https://abdula23.github.io/swipe%menu
+https://abdula23.github.io/swipe%20menu/
