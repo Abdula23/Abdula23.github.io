@@ -22,6 +22,16 @@ let times = {
 	}
 }
 
+let lessons = {
+	monday: {
+		first: "Физическа Культура",
+		second: "Химия",
+		third: "Кураторский час",
+		fourth: "",
+		fifth: "",
+	}
+}
+
 
 
 
