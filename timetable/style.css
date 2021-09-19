@@ -92,6 +92,7 @@ body {
 .numberLesson {
 	line-height: .6;
 	font-size: 14px;
+	width: 30px;
 }
 .oneLessonElems .numberLesson {
 }
