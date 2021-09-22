@@ -78,8 +78,8 @@ let lessons = [
 let myLesson = 0;
 let myWeek = 2;
 let day = new Date();
-day.setHours(10)
-day.setMinutes(23)
+//day.setHours(10)
+//day.setMinutes(23)
 console.log(day.getHours(), day.getMinutes())
 
 let nowLessonTime = null
