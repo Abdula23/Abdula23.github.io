@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imya03</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="main_title">Projects</div>
+	<div class="main_block">
+		<div class="portfolio_elem"><a href="https://imya03.github.io/timetablev2">Timetable</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/calculator">Calculator</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/snake">Snake</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/pong">Pong</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/parnie_kartinki/parnie_kartinki.html">Parnie Kartinki</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/clicker">Clicker</a></div>
+	</div>
+	
+	<div class="more">more</div>
+
+	<div class="main_block main_block_more">
+		<div class="portfolio_elem"><a href="https://imya03.github.io/Luis_Oenrique">Luis Oenrique</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/unixorn">Unixorn</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/new_game_30.06.2020">new game 30.06.2020</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/nvuti">Nvuti</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/perekluchateli">Prekluchateli</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/todoproject">Todo</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/speed_keyboard">Speed keyboard</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/timetable">Timetable (first version)</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/ttt">Tic tac toe</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/2048">2048</a></div>
+		<div class="portfolio_elem"><a href="https://imya03.github.io/countries">Countries</a></div>
+	</div>
+
+</body>
+
+
+<style type="text/css"> 
+	body {
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+	.main_title {
+		color: #000;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 600;
+		margin: 30px 0 0 0;
+	}
+
+	.main_block {
+		border-radius: 4px;
+		color: #000;
+		width: 70vw;
+		margin: 20px 0 0 0;
+		background-color: #fff;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+
+	.portfolio_elem {
+		border-radius: 6px;
+		margin: 30px;
+		width: 240px;
+		height: 240px;
+		box-shadow: 0px 0px 60px 0px #e8e8e8;
+		transition: .2s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 28px;
+		font-weight: 600;
+		text-align: center;
+
+	}
+	.portfolio_elem:hover {
+		border-radius: 22px;
+		box-shadow: 0px 0px 60px 0px #e8e8e8;
+		margin-top: 20px;
+	}
+
+	.more {
+		color: #000;
+		margin: 20px 0 30px 0;
+		cursor: pointer;
+	}
+
+	.main_block_more {
+	}
+
+</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+	<script>
+		$('.main_block_more').hide()
+
+		$('.more').click(() => {
+			$('.more').hide()
+			$('.main_block_more').show()
+		})	
+	</script>
+
+</html>
