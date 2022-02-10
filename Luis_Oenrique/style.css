@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+
+}
+
+
+.home {
+  background-image: url(bg_hero_area.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 57vw;
+}
+
+
+/* fonts
+font-family: 'Asap', sans-serif;
+*/
+
+.clear {
+  float: none;
+}
+
+
+/*
+  ### NAV ###
+  ### NAV ###
+  ### NAV ###
+*/
+
+.nav-logo {
+  margin: 1.8% 0 0 9.1%;
+  margin-bottom: 0.2%;
+  width: 1.6%;
+}
+
+.logo-name {
+  margin-left: 7.5%;
+  font-size: 1.2vw;
+}
+
+.nav {
+  display: block;
+  float: right;
+  margin-right: 7.2%;
+}
+
+.nav ul {
+  color: #4d4d4d;
+  display: -webkit-flex;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav a {
+  padding: 1vw;
+  display: block;
+  font-size: 1.2vw;
+  color: #4d4d4d;
+  text-decoration: none;
+
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size .3s;
+}
+
+.nav a:hover {
+  background-size: 70% 2px;
+}
+
+
+/*
+  ### NAV NAV ###
+  ### NAV NAV ###
+  ### NAV NAV ###
+*/
+
+
+
+/*
+  ### HERO AREA ###
+  ### HERO AREA ###
+  ### HERO AREA ###
+*/
+
+.hero_area {
+  margin-top: 2.2%;
+
+}
+
+
+.face {
+  float: right;
+  margin-right: 5.8%;
+  width: 44%;
+}
+
+.hero_title {
+  font-size: 6.3vw;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-left: 6.9%;
+  padding-top: 12%;
+}
+
+.hero_direction {
+  color: #9a9a9a;
+  font-size: 1.6vw;
+  margin-left: 6.9%;
+  font-weight: 600;
+}
+
+.hero_bttn {
+  margin-top: 2.2%;
+  margin-left: 6.9%;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #4d4d4d;
+  background: none;
+  border: 1px #4d4d4d solid;
+  width: 11.7vw;
+  height: 3.6vw;
+
+  transition: .3s;
+}
+
+.hero_bttn:last-child {
+  margin-left: 20px;
+}
+
+.hero_bttn:hover {
+  background-color: #fff;
+  border: 1px #fff solid;
+  box-shadow: 0 0 25px 3px #c9c9c9;
+}
+
+/*
+  ### HERO AREA ###
+  ### HERO AREA ###
+  ### HERO AREA ###
+*/
+
+
+
+/*
+  ### ABOUT ABOUT ###
+  ### ABOUT ABOUT ###
+  ### ABOUT ABOUT ###
+*/
+
+
+.about {
+  width: 85.65%;
+  margin: 7.175% 0 0 7.175%;
+  height: 40.48vw;
+  margin-top: 8.05vw;
+}
+
+.aboutimg {
+  width: 41.73vw;
+  float: right;
+}
+
+.about_content {
+  width: 38%;
+}
+
+.about_title {
+  color: #4d4d4d;
+  font-size: 1.61vw;
+  margin-top: 2.6vw;
+  line-height: 1.7;
+  letter-spacing: 7px;
+
+  background-image: linear-gradient(#7a7a7a, #7a7a7a);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 14% 4px;
+  transition: background-size .3s;
+}
+
+.about_big_title {
+  color: #7b7b7b;
+  font-size: 3.49vw;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin-top: 0.73vw;
+  margin-bottom: 0.37%;
+}
+
+.about_direction {
+  color: #4d4d4d;
+  font-size: 1.17vw;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.about_bttn {
+  color: #4d4d4d;
+  font-size: 1.17vw;
+  font-weight: 600;
+  margin-top: 2vw;
+  margin-left: 0.21%;
+  background: none;
+  border: 1.2px #4d4d4d solid;
+  width: 18vw;
+  height: 3.6vw;
+  cursor: pointer;
+
+  transition: .4s;
+}
+
+.about_bttn:hover {
+border: 1px #fff solid;
+  background-color: #fff;
+  box-shadow: 0 0 70px 2px #c9c9c9;
+}
+/*
+  ### ABOUT ABOUT ###
+  ### ABOUT ABOUT ###
+  ### ABOUT ABOUT ###
+*/
+
+.ser_color {
+  background-color: #f6f6f6;
+}
+
+.services {
+  width: 75.475vw;
+  height: 34.4vw;
+  margin: auto;
+  margin-top: 8.8%;
+}
+
+.service_title {
+  color: #787878;
+  font-size: 3.36vw;
+  font-weight: 700;
+  letter-spacing: 0.292vw;
+  line-height: 1.7;
+  text-align: center;
+  padding-top: 8.42%;
+  margin-bottom: -5.124%;
+
+  background-image: linear-gradient(#787878, #787878);
+  background-position: 50% 62%;
+  background-size: 6% 0.292vw;
+  background-repeat: no-repeat;
+}
+
+
+.row {
+  height: 14.64vw;
+}
+
+
+.col1 {
+  float: left;
+  margin-right: 20%;
+  margin-left: 4.4%;
+  text-align: center;
+
+  color: #4d4d4d;
+  font-size: 1.75vw;
+  font-weight: 600;
+}
+
+.col1 img {
+  width: 44%;
+}
+
+.col2 {
+  float: left;
+  margin-right: 16.1%;
+  text-align: center;
+
+    color: #4d4d4d;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+
+.col2 img {
+  margin-bottom: 9%;
+  width: 45%;
+}
+
+.col3 {
+  text-align: center;
+
+    color: #4d4d4d;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+
+.col3 img {
+  width: 6.5%;
+}
+
+.col4 {
+  float: left;
+  margin-right: 19%;
+  margin-left: 4.4%;
+  text-align: center;
+
+    color: #4d4d4d;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+
+.col4 img {
+  margin-bottom: 0.512%;
+  width: 54%;
+}
+
+.col5 {
+  float: left;
+  margin-right: 16.1%;
+  text-align: center;
+
+    color: #4d4d4d;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+.col5 img {
+  margin-bottom: 0.22%;
+  width: 32%;
+}
+
+.col6 {
+  text-align: center;
+
+    color: #4d4d4d;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+
+.col6 img {
+  margin-bottom: 0.73%;
+  width: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1 */
