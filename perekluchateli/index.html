@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>perekluchateli</title>
+</head>
+<body>
+
+
+<div class="main">
+	<div class="switch_block sb1">
+		<button class="switch1"></button>
+	</div>
+	<div class="switch_block sb2">
+		<button class="switch2"></button>
+	</div>
+	<div class="switch_block sb3">
+		<button class="switch3"></button>
+	</div>
+</div>
+
+
+</body>
+
+
+<style type="text/css">
+	button {
+		box-shadow: 0px 14px 19px -10px rgba(0,0,0,0.78);
+		background-color: #c4c4c4;
+		margin-left: -1px;
+	}
+	.switch1 {
+		width: 30px;
+		height: 30px;
+		border: none;
+		border-radius: 50%;
+		transition: .2s;
+	}
+	.switch2 {
+		width: 30px;
+		height: 30px;
+		border: none;
+		border-radius: 50%;
+		transition: .2s;
+	}
+	.switch3 {
+		width: 30px;
+		height: 30px;
+		border: none;
+		border-radius: 50%;
+		transition: .2s;
+	}
+
+	.switch_right_green {
+		margin: 0 0 0 20px !important;
+		background-color: #7bc971;
+	}
+	.switch_right_blue {
+		margin: 0 0 0 20px !important;
+		background-color: #7174c9;
+	}
+	.switch_right_red {
+		margin: 0 0 0 20px !important;
+		background-color: #db6363;
+	}
+
+	.switch_block {
+		display: flex;
+		align-items: center;
+		width: 50px;
+		height: 15px;
+		border-radius: 20px;
+		background-color: #a8a8a8;
+		margin: 20px;
+		transition: .3s;
+	}
+
+
+	.sb_green {background-color: #5fa656;}
+	.sb_blue {background-color: #4d509e;}
+	.sb_red {background-color: #ba4c4c;}
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+	$('.switch1').click(function(){
+		if(this.classList.contains('switch_right_green')) {
+			$('.switch1').removeClass("switch_right_green")
+			$('.sb1').removeClass("sb_green")
+		} else {
+			$('.switch1').addClass("switch_right_green")
+			$('.sb1').addClass("sb_green")
+
+			if($('.switch2').hasClass('switch_right_blue') && $('.switch3').hasClass('switch_right_red')) {
+				$('.switch3').removeClass("switch_right_red")
+				$('.sb3').removeClass("sb_red")
+			}
+		}
+	})
+
+	$('.switch2').click(function(){
+		if(this.classList.contains('switch_right_blue')) {
+			$('.switch2').removeClass("switch_right_blue")
+			$('.sb2').removeClass("sb_blue")
+		} else {
+			$('.switch2').addClass("switch_right_blue")
+			$('.sb2').addClass("sb_blue")
+
+			if($('.switch1').hasClass('switch_right_green') && $('.switch3').hasClass('switch_right_red')) {
+				$('.switch1').removeClass("switch_right_green")
+				$('.sb1').removeClass("sb_green")
+			}
+		}
+	})
+
+	$('.switch3').click(function(){
+		if(this.classList.contains('switch_right_red')) {
+			$('.switch3').removeClass("switch_right_red")
+			$('.sb3').removeClass("sb_red")
+		} else {
+			$('.switch3').addClass("switch_right_red")
+			$('.sb3').addClass("sb_red")
+
+			if($('.switch1').hasClass('switch_right_green') && $('.switch2').hasClass('switch_right_blue')) {
+				$('.switch2').removeClass("switch_right_blue")
+				$('.sb2').removeClass("sb_blue")
+			}
+		}
+	})
+</script>
+
+</html>
