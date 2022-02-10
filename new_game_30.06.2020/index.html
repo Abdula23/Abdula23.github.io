@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new game 06.30.2020</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class="main_container">
+
+	<div class="money">0$</div>
+
+	<div class="openMyItems">Фрукты
+		<img src="itemsIconDown.png" class="itemsIconDown">
+	</div>
+	<table class="myItems">
+		<td>
+			<li id="itemsApple">Яблоко 0шт</li>
+			<li id="itemsPear">Груша 0шт</li>
+			<li>Ананасы 0шт</li>
+		</td>
+	</table>
+
+
+	<!-- BUY CONTAINER -->
+		<div class="tabBuy tabOpen">Купить</div>
+		<div class="tabSell tabClosed">Продать</div>
+
+	<div class="buy_container">
+
+		<div class="item_block">
+			<div class="item_img">
+				<img src="item_img.png">
+			</div>
+			<input class="item_count" type="text" name="item_count_input" value="1" id="item_count1">
+			<div class="priceCss" id="price">10$</div>
+			<button class="item_buy_bttn firstBuyBttn" onClick="buy(item_count1, price)">Купить</button>
+		</div>
+
+		<div class="item_block2">
+			<div class="item_img">
+				<img src="pear.png">
+			</div>
+			<input class="item_count" type="text" name="item_count_input" value="1" id="item_count2">
+			<div class="priceCss" id="price2">10$</div>
+			<button class="item_buy_bttn secondBuyBttn" onClick="buy(item_count2, price2)">Купить</button>
+		</div>
+
+	</div>
+	<!-- #BUY CONTAINER -->
+
+
+
+	<!-- SELL CONTAINER -->
+
+
+	<div class="sell_container">
+		<div class="item_block">
+			<div class="item_img">
+				<img src="item_img.png">
+			</div>
+
+			<div class="sell_count_container">
+				<button class="min_sell sell_price_bttns">MIN</button>
+				<button class="min_one_step sell_price_bttns"></button>
+				<button class="max_one_step sell_price_bttns">right</button>
+				<button class="max_sell sell_price_bttns">MAX</button>
+			</div>
+
+			<button class="sell_bttn">Продать</button>
+		</div>
+	</div>
+
+
+	<!-- SELL CONTAINER -->
+
+
+
+
+</div>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
