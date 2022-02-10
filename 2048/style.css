@@ -1,0 +1,58 @@
+body {
+    margin: 0 auto;
+}
+
+
+.main_container {
+    width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #BBADA0;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: baseline;
+}
+.main_container div {position: absolute;}
+
+
+.cell {
+    width: 130px;
+    height: 130px;
+    background-color: #CDC1B3;
+    border-radius: 4px;
+}
+
+.cell1 {margin: 10px 0 0 10px;}
+.cell2 {margin: 10px 0 0 160px;}
+.cell3 {margin: 10px 0 0 310px;}
+.cell4 {margin: 10px 0 0 460px;}
+.cell5 {margin: 160px 0 0 10px;}
+.cell6 {margin: 160px 0 0 160px;}
+.cell7 {margin: 160px 0 0 310px;}
+.cell8 {margin: 160px 0 0 460px;}
+.cell9 {margin: 310px 0 0 10px;}
+.cell10 {margin: 310px 0 0 160px;}
+.cell11 {margin: 310px 0 0 310px;}
+.cell12 {margin: 310px 0 0 460px;}
+.cell13 {margin: 460px 0 0 10px;}
+.cell14 {margin: 460px 0 0 160px;}
+.cell15 {margin: 460px 0 0 310px;}
+.cell16 {margin: 460px 0 0 460px;}
+
+
+
+
+.tt {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    background-color: #EDE1C9;
+    border-radius: 4px;
+    transition: .2s;
+}
+
+.tt2 {
+    background-color: red;
+}
