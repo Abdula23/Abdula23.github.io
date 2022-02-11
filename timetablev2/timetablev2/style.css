@@ -1,0 +1,271 @@
+body {
+	margin: 0 auto;
+	background: #232C33;
+	font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: #232C33;
+  	border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3c4a54;
+  	border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #516470;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main {
+	display: flex;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+
+.left_panel {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: auto;
+}
+
+.day_name {
+	margin: 0 0 10px 0;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.day_block {
+	margin: 30px 0 0 30px;
+	width: 356px;
+	display: flex;
+}
+.day_block_lessons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lesson_block {
+	width: 300px;
+	height: 58px;
+	background-color: #BB4430;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 14px 0;
+	transition: width .1s;
+}
+.lesson_back {
+	background-color: #151515;
+	width: 240px;
+	height: 32px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background .2s, width .1s;
+}
+.lesson_back:hover {
+	background-color: #292929;
+}
+.lesson_name {
+	cursor: pointer;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+}
+.empty_lesson {
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	opacity: .6;
+}
+.empty_lesson1 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	opacity: .6;
+	margin: 10px 0 10px 0;
+}
+.empty_lesson2 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	opacity: .6;
+	margin: 0 0 10px 0;
+}
+
+.lesson_block_double {
+	width: 300px;
+	background-color: #BB4430;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	margin: 0 0 14px 0;
+	transition: width .1s;
+}
+.lesson1 {
+	margin: 10px 0 10px 0;
+	background-color: #151515;
+	width: 240px;
+	height: 32px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background .2s, width .1s;
+}
+.lesson2 {
+	margin: 0 0 10px 0;
+	background-color: #151515;
+	width: 240px;
+	height: 32px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background .2s, width .1s;
+}
+.lesson_back1:hover {
+	background-color: #292929;
+}
+.lesson_back2:hover {
+	background-color: #292929;
+}
+
+
+
+.right_panel {
+	background-color: #fff;
+	width: 40vw;
+	height: 100vh;
+	display: flex;
+	box-shadow: -2px 0px 35px 7px rgba(20, 28, 34, 0.72);
+}
+
+.lesson_more {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.icon_discipline {
+	padding: 12px;
+	width: 200px;
+	height: 200;
+	margin: 20px 0 10px 0;
+	align-self: center;
+	box-shadow: 4px 10px 30px 0px #e6e6e6;
+}
+
+.lesson_name_more {
+	font-size: 38px;
+	font-weight: 700;
+	margin: 0 0 0 12px;
+}
+.aud {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0px 0 0 16px	;
+}
+.teacher_name {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 4px 0 0 16px	;
+}
+.docs_discipline {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 4px 0 0 16px	;
+}
+
+.close_right {
+	width: 20px;
+	height: 20px;
+	margin: 0 14px 0 0;
+	padding: 14px 0 0 0;
+	cursor: pointer;
+	transition: .2s;
+}
+.close_right:hover {
+	padding: 10px 0 8px 0;
+}
+
+
+
+
+
+
+
+.day_block_timeline {
+	margin-right: 14px;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background-color: #53A57A;
+	margin-top: -1px;
+}
+
+.line {
+	width: 4px;
+	height: 40px;
+	margin-left: 5px;
+	margin-top: -1px;
+	background-color: #8AAA85;
+}
+
+
+
+.docs_view {
+	background: #fff;
+	position: fixed;
+	width: 40vw;
+	height: 100vh;
+	top: 0;
+	left: 100vw;
+	/*left: 71vw;*/
+	display: none;
+	flex-direction: column;
+	padding: 20px;
+	z-index: 999;
+	transition: .2s;
+}
+.doc {
+	margin: 6px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+.doc_name {
+
+}
+.doc_download {
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.back {
+	font-weight: 800;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
