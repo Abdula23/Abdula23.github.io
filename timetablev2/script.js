@@ -1,17 +1,27 @@
 $('.right_panel').toggle()
+$('.mobile_more_info').toggle()
 
 let openedDiscipline = ""
 
 
 $('.lesson_name').click(function (e) {
-	$('.right_panel').hide()
-
 	e = $(e.target).html()
 	if(openedDiscipline == e) {
-		$('.right_panel').hide()
 		openedDiscipline = ""
-	} else { openedDiscipline = e 
-		setTimeout(() => {$('.right_panel').show()}, 100)
+		if($('html').width() < 600) {
+			$('.mobile_more_info').hide()
+		} else {
+			$('.right_panel').toggle()
+		}
+		removeSmallClass()
+	} else {
+		if($('html').width() < 600) {
+			$('.mobile_more_info').show()
+		}  else {
+			$('.right_panel').show()
+		}
+		openedDiscipline = e
+		if($('html').width() > 1000) { addSmallClass() }
 	}
 
 	$('.lesson_name_more').html(discArr[selectDisc(e)].name)
@@ -19,12 +29,31 @@ $('.lesson_name').click(function (e) {
 	$('.aud').html("Аудитория " + discArr[selectDisc(e)].aud)
 	$('.teacher_name').html("Преподаватаель " + discArr[selectDisc(e)].teacherName)
 	$('.docs_discipline a').html(" " + discArr[selectDisc(e)].docs)
-
 })
 
 
+$('.docs_discipline').click(() => {
+	$('.docs_view').show()
+	if($('html').width() > 600) {
+		$('.docs_view').css('left', '72vw')
+	} else {
+		$('.docs_view').toggle()
+	}
+})
+$('.back').click(() => {
+	$('.docs_view').css('left', '100vw')
+})
+
+
+
 $('.close_right').click(() => {
-	$('.right_panel').toggle()
+	$('.right_panel').hide()
+	removeSmallClass()
+	openedDiscipline = ""
+})
+$('.close_mobile_info').click(() => {
+	$('.mobile_more_info').hide()
+	openedDiscipline = ""
 })
 
 
@@ -67,7 +96,7 @@ let discArr = {
 	},
 	bioorgany: {
 		img: "img/chemistry.png",
-		name: "Биоорганическая химия",
+		name: "Биоорганика",
 		aud: "Г3-09",
 		teacherName: "Яхаджиева С.С.",
 		docs: "открыть",
@@ -133,4 +162,28 @@ function selectDisc (e) {
 	} else if (e == "Английский") {
 		return "english"
 	}
+}
+
+
+function addSmallClass () {
+	$('.day_name').addClass('day_nameS')
+	$('.day_block').addClass('day_blockS')
+	$('.lesson_block').addClass('lesson_blockS')
+	$('.lesson_block_double').addClass('lesson_block_doubleS')
+	$('.lesson_back').addClass('lesson_backS')
+	$('.lesson_name').addClass('lesson_nameS')
+	$('.empty_lesson').addClass('empty_lessonS')
+	$('.empty_lesson1').addClass('empty_lesson1S')
+	$('.empty_lesson2').addClass('empty_lesson2S')
+}
+function removeSmallClass () {
+	$('.day_name').removeClass('day_nameS')
+	$('.day_block').removeClass('day_blockS')
+	$('.lesson_block').removeClass('lesson_blockS')
+	$('.lesson_block_double').removeClass('lesson_block_doubleS')
+	$('.lesson_back').removeClass('lesson_backS')
+	$('.lesson_name').removeClass('lesson_nameS')
+	$('.empty_lesson').removeClass('empty_lessonS')
+	$('.empty_lesson1').removeClass('empty_lesson1S')
+	$('.empty_lesson2').removeClass('empty_lesson2S')
 }
