@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+
+<body>
+	<div class="name-app">To do</div>
+	
+	<div class="add-todo">
+		<input id="addInput" type="text" placeholder="Добавить задачу">
+		<button><img src="img/plus.png"></button>
+	</div>
+
+	<div class="todos">
+	</div>
+
+	<div class="doneTodosContainer">
+		<div class="doneTodoTop">
+			<div class="doneTodoTitle">Done todos</div>
+			<button class="doneTodoTopBtn"><img src="img/expand-arrow.png" alt="arrow"></button>
+		</div>
+		<div class="doneTodos"></div>
+	</div>
+
+	<div class="openMenuBtn"></div>
+	<div class="menu">
+		<button class="doneAllTodos"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABLElEQVRIie3UMU7DQBCF4X/sNXABR6ICFAsJKTRwAASIJhScxzSYhhshmrig4gCAiEiQ0oGoqbDjoUjSxCRZK3aKyK/c9ejT7KwX6tRZt8gqkGY/ahijDyr8vO/cngA4q0Ado7HCEbA1WTdVokEv9B2XDtACul4mV5O9yo466IW+YzZjRA+Brqdy+roXfVUKL0IrgW3Q0mFbtFS4CFoaXBTNwfuDmycQb5jS/giibxt08p8KtBReslTObWqnHxADeuwYjZv9qFEVmoOz5LeNyrNAyzX6eDC43p5VGPRC33XpyPhx2FC5sEXhnxlPz8slOXvbvfuc943NTBfCi/Ay0JnwLDxJNC0DnQtD/vKMCwpfpMIw5DqHJTu1hmHUuWv0HmCYyuUyndaps775A58gu4VipAyoAAAAAElFTkSuQmCC"/>Выполнить всё</button>
+		<button class="deleteDoneTodos"><img src="img/trash.png">Удалить выполненные</button>
+		<button class="cancelDoneTodos"><div></div>Отменить выполненные</button>
+	</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
